@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de Números</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <form id="meu-formulario">
-        <label for="campoA">Campo A:</label>
-        <input type="number" id="campoA" name="campoA" required>
-
-        <label for="campoB">Campo B:</label>
-        <input type="number" id="campoB" name="campoB" required>
-
-        <button type="submit">Verificar</button>
+    <div class="container">
+        <h1>
+            FORMULÁRIO
+        </h1>
+        <h2>
+            Consulta
+        </h2>
+    </div class="container">
+    <h3>Insira um número no campo B seja maior que o número no campo A:</h3>
+    <form id="Consulta-formulario"> 
+        <input type="text"  id="campoA" placeholder="campo A"/>
+        <input type="text"  id="campoB" placeholder="campo B"/>
     </form>
 
-    <div id="mensagem"></div>
+    <button type="submit" id="button-Consultar">Consultar</button>
 
+    <div id="mensagem"></div>
     <script src="script.js"></script> 
 </body>
 </html>
