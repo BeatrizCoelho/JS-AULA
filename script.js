@@ -1,4 +1,4 @@
-const formulario = document.getElementById('meu-formulario');
+const formulario = document.getElementById('Consulta-formulario');
 const mensagemDiv = document.getElementById('mensagem');
 
 formulario.addEventListener('submit', function(e) {
@@ -10,8 +10,10 @@ formulario.addEventListener('submit', function(e) {
     if (valorB > valorA) {
         mensagemDiv.innerHTML = '<p>Formulário válido! B é maior que A.</p>';
         mensagemDiv.style.color = 'green';
+        alert('Formulário válido! B é maior que A.');
     } else {
         mensagemDiv.innerHTML = '<p>Formulário inválido! B deve ser maior que A.</p>';
         mensagemDiv.style.color = 'red';
+        alert('Formulário inválido! B deve ser maior que A.'); 
     }
 });
